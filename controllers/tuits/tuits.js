@@ -10,6 +10,7 @@ export default [{ "_id": 123,
     "likes": 2345,
     "handle": "@spacex",
     "dislikes": 567,
+    "disliked": true,
     "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
 },
     { "_id": 234,
@@ -24,6 +25,7 @@ export default [{ "_id": 123,
         "likes": 2845,
         "dislikes": 678,
         "handle": "@spacex",
+        "disliked": false,
         "tuit": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage → starlink.com/rv"
     },
     { "_id": 345,
@@ -38,6 +40,7 @@ export default [{ "_id": 123,
         "likes": 2345,
         "dislikes": 789,
         "handle": "@tesla",
+        "disliked": true,
         "tuit": "Dennis and Akiko Tito are the first two crewmembers on Starship’s second commercial spaceflight around the Moon → spacex.com/updates e future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"}
 ];
 
