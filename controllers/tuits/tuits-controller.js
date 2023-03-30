@@ -3,7 +3,7 @@ let tuits = posts;
 
 const createTuit = (req, res) => {
     const newTuit = req.body;
-    newTuit._id = (new Date()).getTime()+'';
+    newTuit._id = parseInt((new Date()).getTime()+'');
     newTuit.likes = 0;
     newTuit.liked = false;
     newTuit.handle = "@NASA";
@@ -25,7 +25,7 @@ const updateTuit = (req, res) => {
     const tuitdIdToUpdate = parseInt(req.params.tid);
     const updates = req.body;
     const tuitIndex = tuits.findIndex(
-        (t) => t._id === tuitdIdToUpdate )
+        (t) => t._id === tuitdIdToUpdate)
     tuits[tuitIndex] = {...tuits[tuitIndex], ...updates};
     res.sendStatus(200);
 }
